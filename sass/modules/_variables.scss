@@ -1,0 +1,50 @@
+$purple:#d7539e;
+$text:#333;
+$gray:#FAFAFA;
+$blue:#5ed9ea;
+$red:#ed145b;
+$green:#aad369;
+
+//mixins
+@mixin buttons {
+  display: inline-block;
+  height: 40px;
+  line-height: 42px;
+  font-size: 16px;
+  color: $text;
+  padding: 0 20px;
+  text-decoration: none;
+  background: transparent;
+  outline: none;
+  @media (max-width: 460px) {
+    height: 45px;
+    line-height: 45px;
+  }
+}
+@mixin trans {
+  -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+    transition: all 0.20s ease-in-out;
+    -webkit-transition-duration: 0.2s;
+}
+@mixin trans2 {
+  -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+@mixin flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.titulo-interno {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 23px;
+}

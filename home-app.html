@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/toggle-switch.css">
+  <link rel="stylesheet" href="css/base.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+      <div class="uk-offcanvas-bar">
+        <div class="logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <div class="user">Esteban Muñoz</div>
+        <h2>Mis cuentas</h2>
+        <ul class="cuentas">
+          <li>
+            <a href="" class="active">
+              <i class="fab fa-facebook-f fa-1x"></i>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-instagram fa-1x"></i>
+              <span>Intagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-globe fa-1x"></i>
+              <span>Website</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li>
+            <a href="#">Notificaciones</a>
+            <span class="uk-badge">5</span>
+          </li>
+          <li>
+            <a href="#">Campañas</a>
+          </li>
+          <li>
+            <a href="#">Facturación</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="uk-offcanvas-content">
+        <div class="contenido">
+          <header>
+            <div class="open-sidebar">
+              <i class="fas fa-bars"></i>
+            </div>
+            <form class="search uk-search uk-search-default">
+              <span class="uk-search-icon-flip" uk-search-icon></span>
+              <input class="uk-search-input" type="search" placeholder="¿Que buscas?">
+            </form>
+            <a class="openAux"><i class="fas fa-cog fa-2x"></i></i><span>Configuración</span></a>
+          <div class="clear"></div>
+          </header>
+          <div class="top-app">
+            <h1>Facebook</h1>
+            <a href="" class="edit">
+              <span>Editar</span>
+              <i class="fas fa-pencil-alt"></i>
+            </a>
+            <a href="" class="add">
+              <span>Agregar pagina</span>
+              <i class="fas fa-plus-circle fa-2x"></i>
+            </a>
+          <div class="clear"></div>
+          </div>
+          <label>Selecciona una página</label>
+          <ul class="uk-subnav paginas" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+            <li>
+              <a href="#">
+                <div class="logo uk-flex uk-flex-middle">
+                  <img src="img/acer-logo.jpg" alt="">
+                </div>
+                <div class="visits best">
+                  300 visitas
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="logo uk-flex uk-flex-middle">
+                  <img src="img/natuprana.jpg" alt="">
+                </div>
+                <div class="visits">
+                  100 visitas
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="uk-card uk-card-body uk-card-default uk-switcher uk-margin services">
+            <li>
+              <label>Servicios activos <span>3</span></label>
+              <h2>Acer</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="items">
+                <label>Servicios</label>
+                <ul class="servs">
+                  <li class="servs-li">
+                    <a href="#">
+                      <div class="circle">
+                        <i class="fas fa-comment-alt"></i>
+                      </div>
+                      <label>Chats</label>
+                    </a>
+                  </li>
+                  <li class="servs-li">
+                    <a href="#">
+                      <div class="circle">
+                        <i class="fas fa-comments"></i>
+                      </div>
+                      <label>Comentarios</label>
+                    </a>
+                  </li>
+                  <li class="servs-li">
+                    <a href="#">
+                      <div class="circle">
+                        <i class="fas fa-edit"></i>
+                      </div>
+                      <label>Publicaciones</label>
+                    </a>
+                  </li>
+                  <li class="servs-li disabled">
+                    <a href="#">
+                      <div class="circle">
+                        <i class="fas fa-users"></i>
+                      </div>
+                      <label>Gestión usuarios</label>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="actions">
+                <a href="#">Activar mas servicios</a>
+              </div>
+            </li>
+            <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          </ul>
+        </div>
+
+    </div>
+
+    <div class="menuAux">
+      <div class="uk-offcanvas-bar">
+        <div class="simbolo">
+          <img src="img/simbolo.svg" alt="">
+        </div>
+        <h2>Mis cuentas</h2>
+        <form class="activate">
+          <ul>
+            <li>
+              <span class="icon"><i class="fab fa-facebook-f fa-2x"></i></span>
+              <label class="switch-light switch-material">
+              <input type="checkbox">
+              <span>
+                <span>Off</span>
+                <span>On</span>
+                <a></a>
+              </span>
+            </label>
+            </li>
+            <li>
+              <span class="icon"><i class="fab fa-instagram fa-2x"></i></span>
+              <label class="switch-light switch-material">
+              <input type="checkbox">
+              <span>
+                <span>Off</span>
+                <span>On</span>
+                <a></a>
+              </span>
+            </label>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-globe fa-2x"></i></i></span>
+              <label class="switch-light switch-material">
+              <input type="checkbox">
+              <span>
+                <span>Off</span>
+                <span>On</span>
+                <a></a>
+              </span>
+            </label>
+            </li>
+          </ul>
+        </form>
+        <ul class="menu">
+          <li>
+            <a href="#">Editar</a>
+          </li>
+          <li>
+            <a href="#">Cambiar con</a>
+          </li>
+          <li>
+            <a href="#">Administrar cuentas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/loaded.min.js"></script>
+<script src="js/custom.min.js"></script>
+</body>
+</html>

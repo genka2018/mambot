@@ -1,0 +1,97 @@
+.paginas {
+  li {
+    text-align: center;
+    .logo {
+      width: 150px;
+      height: 100px;
+      -webkit-filter: grayscale(10);
+      filter: grayscale(10);
+      img {
+        width: 100%;
+      }
+    }
+    .visits {
+      padding: 2px 5px;
+      display: inline-block;
+    }
+    .best {
+      background: $green;
+      color: #fff;
+    }
+  }
+  .uk-active {
+    .logo {
+      filter: none;
+    }
+  }
+}
+.services {
+  li {
+    label {
+      font-size: 13px;
+      text-align: right;
+      font-weight: 300;
+      display: block;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+  }
+  .items {
+    label {
+      text-align: left;
+      font-size: 18px;
+      margin: 25px 0 10px 0;
+      font-weight: 600;
+      color: $text;
+    }
+    ul {
+      .servs-li {
+        text-align: center;
+        a {
+          color: $text;
+          text-decoration: none;
+          .circle {
+            @include trans;
+            width: 120px;
+            height: 120px;
+            border-radius: 120px;
+            margin: 0 auto;
+            display: block;
+            line-height: 120px;
+            text-align: center;
+            color: #fff;
+            font-size: 50px;
+            background: #d7539e; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #d7539e 0%, #d7539e 50%, #c5478e 50%, #c5478e 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #d7539e 0%,#d7539e 50%,#c5478e 50%,#c5478e 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #d7539e 0%,#d7539e 50%,#c5478e 50%,#c5478e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7539e', endColorstr='#c5478e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+          }
+          label {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 8px;
+          }
+          &:hover {
+            .circle {
+              font-size: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .actions {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    a {
+      @include buttons;
+      border: 2px solid $text;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.sidebar {
+  .uk-offcanvas-bar {
+    width: 200px;
+    padding: 0;
+    @media (min-width: 800px) {
+      transform: none;
+    }
+  }
+  .logo {
+    max-width: 100px;
+    margin: 20px auto 40px auto;
+  }
+  .user {
+    background: $purple;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    padding: 9px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    &:after {
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-left: 5px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid $purple;
+      position: absolute;
+      left: 80px;
+      bottom:-10px;
+    }
+  }
+  h2 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 19px;
+    padding: 20px 0 10px 0;
+  }
+  .cuentas {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6d6d6d;
+    li {
+      a {
+        display: block;
+        padding: 8px 30px;
+        text-decoration: none;
+        font-size: 15px;
+        svg {
+          margin-right: 7px;
+        }
+        &:hover {
+          background: $blue;
+        }
+      }
+      .active {
+        background: $blue;
+      }
+    }
+  }
+  .menu {
+    padding: 0 20px;
+    .uk-badge {
+      background: $red;
+      color: #fff;
+      margin-left: 10px;
+    }
+  }
+  @media (min-width: 800px){
+    display: block;
+    right: inherit!important;
+    z-index: 0!important;
+  }
+}
