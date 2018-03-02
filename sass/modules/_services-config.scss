@@ -1,0 +1,73 @@
+.services-config  {
+  .top-app {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    h2 {
+      font-size: 20px;
+      color: $purple;
+      margin-bottom: 10px;
+    }
+    h1 {
+      color: $text;
+      float: none;
+    }
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+    .servs-li {
+      a {
+        .circle {
+          width: 60px;
+          height: 60px;
+          line-height: 65px;
+          font-size: 30px;
+          -webkit-filter: grayscale(2);
+          filter: grayscale(2);
+        }
+      }
+      label {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .active {
+        .circle {
+          filter: none;
+        }
+      }
+    }
+  }
+  .services-content {
+    .top {
+      h2 {
+        float: left;
+        font-size: 40px;
+        margin-bottom: 15px;
+        span {
+          margin-left: 6px;
+        }
+      }
+      .actions {
+        float: right;
+        ul {
+          li {
+            display: inline-block;
+            a {
+              @include buttons;
+              border: 2px solid $text;
+            }
+            &:last-child {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .intro {
+      margin-bottom: 20px;
+      label {
+        font-size: 20px;
+      }
+    }
+  }
+}

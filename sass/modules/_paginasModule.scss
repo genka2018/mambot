@@ -48,39 +48,10 @@
       color: $text;
     }
     ul {
-      .servs-li {
-        text-align: center;
-        a {
-          color: $text;
-          text-decoration: none;
-          .circle {
-            @include trans;
-            width: 120px;
-            height: 120px;
-            border-radius: 120px;
-            margin: 0 auto;
-            display: block;
-            line-height: 120px;
-            text-align: center;
-            color: #fff;
-            font-size: 50px;
-            background: #d7539e; /* Old browsers */
-            background: -moz-linear-gradient(-45deg, #d7539e 0%, #d7539e 50%, #c5478e 50%, #c5478e 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(-45deg, #d7539e 0%,#d7539e 50%,#c5478e 50%,#c5478e 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(135deg, #d7539e 0%,#d7539e 50%,#c5478e 50%,#c5478e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7539e', endColorstr='#c5478e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-          }
-          label {
-            text-align: center;
-            font-size: 18px;
-            font-weight: 600;
-            margin-top: 8px;
-          }
-          &:hover {
-            .circle {
-              font-size: 45px;
-            }
-          }
+      li {
+        label {
+          text-align: center;
+          margin-top: 10px; 
         }
       }
     }
@@ -92,6 +63,41 @@
     a {
       @include buttons;
       border: 2px solid $text;
+    }
+  }
+}
+.servs-li {
+  text-align: center;
+  a {
+    color: $text;
+    text-decoration: none;
+    .circle {
+      @include trans;
+      width: 120px;
+      height: 120px;
+      border-radius: 120px;
+      margin: 0 auto;
+      display: block;
+      line-height: 120px;
+      text-align: center;
+      color: #fff;
+      font-size: 50px;
+      background: #d7539e; /* Old browsers */
+      background: -moz-linear-gradient(-45deg, #d7539e 0%, #d7539e 50%, #c5478e 50%, #c5478e 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, #d7539e 0%,#d7539e 50%,#c5478e 50%,#c5478e 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg, #d7539e 0%,#d7539e 50%,#c5478e 50%,#c5478e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7539e', endColorstr='#c5478e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    label {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    &:hover {
+      .circle {
+        font-size: 45px;
+      }
     }
   }
 }

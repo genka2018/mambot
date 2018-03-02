@@ -1,0 +1,92 @@
+.chats {
+  .sections {
+    .left {
+      float: left;
+      width: 45%;
+      .chat-input {
+        border: 1px solid #e5e5e5;
+        height: 40px;
+        width: 98%;
+        padding-left: 8px;
+        color: #666;
+        font-size: 16px;
+        font-weight: 100;
+      }
+      .add {
+        text-align: right;
+        a {
+          color: $text;
+          text-decoration: none;
+          span {
+            color: $blue;
+            position: relative;
+            top: 6px;
+          }
+        }
+      }
+      .mensajes {
+        margin-top: 25px;
+        label {
+          font-size: 18px;
+          margin-bottom: 15px;
+          display: block;
+        }
+        form {
+          label {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+          .uk-checkbox:checked, .uk-checkbox:indeterminate, .uk-radio:checked {
+            background: $purple;
+          }
+        }
+      }
+    }
+    .right {
+      float: right;
+      width: 50%;
+      .uk-card {
+        padding: 0;
+      }
+      .header {
+        background: $text;
+        color: #fff;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        img {
+          max-width: 50px;
+          float: left;
+        }
+        span {
+          margin: 10px 0 0 10px;
+          display: inline-block;
+        }
+      }
+      .search {
+        padding: 0 15px;
+        margin-bottom: 15px;
+        form {
+          float: right;
+        }
+      }
+      .user-prub {
+        color: $text;
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        .user1 {
+          .foto {
+            margin-right: 8px;
+          }
+        }
+        .content {
+          label {
+            font-size: 20px;
+            margin: 15px 0 8px 0;
+            display: block;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
