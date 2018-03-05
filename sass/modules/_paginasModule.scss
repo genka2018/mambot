@@ -51,7 +51,7 @@
       li {
         label {
           text-align: center;
-          margin-top: 10px; 
+          margin-top: 10px;
         }
       }
     }
@@ -73,15 +73,15 @@
     text-decoration: none;
     .circle {
       @include trans;
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 120px;
       margin: 0 auto;
       display: block;
-      line-height: 120px;
+      line-height: 100px;
       text-align: center;
       color: #fff;
-      font-size: 50px;
+      font-size: 40px;
       background: #d7539e; /* Old browsers */
       background: -moz-linear-gradient(-45deg, #d7539e 0%, #d7539e 50%, #c5478e 50%, #c5478e 100%); /* FF3.6-15 */
       background: -webkit-linear-gradient(-45deg, #d7539e 0%,#d7539e 50%,#c5478e 50%,#c5478e 100%); /* Chrome10-25,Safari5.1-6 */
@@ -90,7 +90,7 @@
     }
     label {
       text-align: center;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       margin-top: 8px;
     }

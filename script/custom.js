@@ -23,6 +23,12 @@ UIkit.toggle('.open-sidebar', {
 
 UIkit.switcher('.paginas');
 
+
+UIkit.drop('.context', {
+	mode:'click',
+	pos:'left-center'
+});
+
 //MASONRY
 var $grid = $('.servs').masonry({
 	itemSelector: '.servs-li',

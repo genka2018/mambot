@@ -12,18 +12,6 @@
         font-size: 16px;
         font-weight: 100;
       }
-      .add {
-        text-align: right;
-        a {
-          color: $text;
-          text-decoration: none;
-          span {
-            color: $blue;
-            position: relative;
-            top: 6px;
-          }
-        }
-      }
       .mensajes {
         margin-top: 25px;
         label {
@@ -47,6 +35,10 @@
       width: 50%;
       .uk-card {
         padding: 0;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 6px;
+        }
       }
       .header {
         background: $text;
@@ -67,13 +59,17 @@
         margin-bottom: 15px;
         form {
           float: right;
+          input {
+            font-weight: 100;
+            padding-left: 8px;
+          }
         }
       }
       .user-prub {
         color: $text;
         padding: 0 20px 20px 20px;
         margin-bottom: 10px;
-        .user1 {
+        .user1, .user2 {
           .foto {
             margin-right: 8px;
           }
@@ -86,6 +82,123 @@
             font-weight: 600;
           }
         }
+      }
+      .events, .acciones {
+        padding: 20px;
+      }
+      .acciones {
+        margin-bottom: 10px;
+        .input-acc {
+          border: 1px solid #e5e5e5;
+          height: 40px;
+          width: 98%;
+          padding-left: 8px;
+          color: #666;
+          font-size: 16px;
+          font-weight: 100;
+        }
+        .parametros {
+          background: lighten($text, 20);
+          padding: 15px;
+          color: #fff;
+          li {
+            margin: 0 8px;
+          }
+          span {
+            display: block;
+            margin-bottom: 3px;
+          }
+          .input-p {
+            padding-left: 8px;
+            width: 90%;
+            height: 30px;
+          }
+          .uk-checkbox {
+            width: 22px;
+            height: 22px;
+            margin-top: 6px;
+          }
+          .uk-checkbox:checked, .uk-checkbox:indeterminate {
+            background-color: $purple;
+          }
+        }
+      }
+      .respuesta {
+        padding: 20px;
+        border-top: 1px solid #e5e5e5;
+        h3 {
+          font-size: 25px;
+          font-weight: 600;
+        }
+        .user-prub {
+          padding: 0 0 20px 0;
+          .user2 {
+            text-align: right;
+            .foto {
+              margin: 0 0 0 8px;
+            }
+          }
+        }
+        .contexto {
+          margin-top: 15px;
+          h2 {
+            float: left;
+            font-size: 16px;
+          }
+          .add {
+            float: right;
+            position: relative;
+            top: -13px;
+          }
+          .context {
+            background: transparentize($blue, 0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+            ul {
+              li {
+                margin: 0;
+                border-bottom: 1px solid #fff;
+                a {
+                  padding: 10px 15px;
+                  color: #fff;
+                  text-decoration: none;
+                  display: block;
+                }
+                &:last-child {
+                  border: none;
+                }
+              }
+            }
+          }
+          ul {
+            li {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .actionsR {
+      margin-top: 20px;
+      .add {
+        float: left;
+      }
+      .create {
+        float: right;
+        @include buttons;
+        background: $purple;
+        color: #fff;
+      }
+    }
+  }
+  .add {
+    text-align: right;
+    a {
+      color: $text;
+      text-decoration: none;
+      span {
+        color: $blue;
+        position: relative;
+        top: 6px;
       }
     }
   }

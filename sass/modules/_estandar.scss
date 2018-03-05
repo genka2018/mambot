@@ -173,9 +173,10 @@ body, html {
   display: none!important;
 }
 .contenido {
-  padding: 20px 40px 20px 60px;
+  padding: 20px 40px 60px 60px;
+  background: #fbfbfb;
   @media (max-width: 800px) {
-    padding: 20px 20px 20px 70px;
+    padding: 20px 20px 60px 70px;
   }
 }
 .top-app {
