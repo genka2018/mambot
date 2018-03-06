@@ -29,6 +29,54 @@
           }
         }
       }
+      .searchC {
+        margin-bottom: 10px;
+        form {
+          float: right;
+          input {
+            font-weight: 100;
+          }
+        }
+      }
+      .chatsC {
+        padding: 0;
+        ul {
+          li {
+            a {
+              color: $text;
+              font-weight: 600;
+              font-size: 20px;
+              padding: 10px 20px;;
+              border-bottom: 1px solid #e5e5e5;
+              text-decoration: none;
+              @include trans;
+              &:hover {
+                padding-left: 30px;
+              }
+            }
+            .active {
+              &:before {
+                content: '';
+                 display: inline-block;
+                 width: 15px;
+                 height: 15px;
+                 -moz-border-radius: 7.5px;
+                 -webkit-border-radius: 7.5px;
+                 border-radius: 7.5px;
+                 background:$purple;
+              }
+            }
+            .foto {
+              margin: 0 10px;
+            }
+            &:last-child {
+              a {
+                border: none;
+              }
+            }
+          }
+        }
+      }
     }
     .right {
       float: right;
@@ -54,6 +102,10 @@
           display: inline-block;
         }
       }
+      .facebook {
+        background:$facebook;
+        padding: 10px 15px;
+      }
       .search {
         padding: 0 15px;
         margin-bottom: 15px;
@@ -72,6 +124,9 @@
         .user1, .user2 {
           .foto {
             margin-right: 8px;
+            img {
+              max-width: inherit;
+            }
           }
         }
         .content {
@@ -175,6 +230,9 @@
             }
           }
         }
+      }
+      .respuestaC {
+        border: none;
       }
     }
     .actionsR {
