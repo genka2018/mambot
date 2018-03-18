@@ -1,0 +1,213 @@
+.posts {
+  .param {
+    li {
+      a {
+        text-transform: none;
+        font-size: 16px;
+        font-weight: 500;
+        height: 33px;
+        line-height: 33px;
+      }
+    }
+    .uk-active {
+      a {
+        background: $blue;
+        color: #fff;
+        border-radius: 50px;
+        padding: 0 15px;
+        height: 33px;
+        line-height: 33px;
+      }
+    }
+  }
+  .param-items {
+    .left {
+      float: left;
+      width: 45%;
+      .compor {
+        label {
+          font-size: 18px;
+          margin-bottom: 15px;
+          display: block;
+        }
+        form {
+          label {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+          .uk-checkbox:checked, .uk-checkbox:indeterminate, .uk-radio:checked {
+            background: $purple;
+          }
+        }
+      }
+      .button {
+        @include buttons;
+        border: 2px solid $text;
+      }
+      .crearR {
+        label {
+          font-size: 18px;
+          margin-bottom: 15px;
+          display: block;
+        }
+        .chat-input {
+          border: 1px solid #e5e5e5;
+          height: 40px;
+          width: 98%;
+          padding-left: 8px;
+          color: #666;
+          font-size: 16px;
+          font-weight: 100;
+        }
+        .uk-textarea {
+          color: #666;
+          font-size: 16px;
+          font-weight: 100;
+          font-family: "Roboto";
+        }
+        ul {
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .right {
+      float: right;
+      width: 50%;
+      .uk-card {
+        padding: 0;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 6px;
+        }
+      }
+      .header {
+        background: $text;
+        color: #fff;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        img {
+          max-width: 50px;
+          float: left;
+        }
+        span {
+          margin: 10px 0 0 10px;
+          display: inline-block;
+        }
+      }
+      .user-prub {
+        color: $text;
+        padding: 0 20px 2px 20px;
+        margin-bottom: 10px;
+        .user1, .user2 {
+          .foto {
+            margin-right: 8px;
+            img {
+              max-width: inherit;
+            }
+          }
+        }
+        .content {
+          label {
+            font-size: 20px;
+            margin: 15px 10px 8px 0;
+            display: inline-block;
+            font-weight: 600;
+          }
+        }
+      }
+      .fotoPost {
+        margin-bottom: 10px;
+        img {
+          width: 100%;
+        }
+      }
+      h2 {
+        font-size: 16px!important;
+        padding: 10px 20px;
+      }
+      .respuesta {
+        padding: 20px;
+        border-top: 1px solid #e5e5e5;
+        h3 {
+          font-size: 25px;
+          font-weight: 600;
+        }
+        .user-prub {
+          padding: 0 0 20px 0;
+          .user2 {
+            text-align: right;
+            .foto {
+              margin: 0 0 0 8px;
+            }
+          }
+        }
+        .contexto {
+          margin-top: 15px;
+          h2 {
+            float: left;
+            font-size: 16px;
+          }
+          .add {
+            float: right;
+            position: relative;
+            top: -13px;
+          }
+          .context {
+            background: transparentize($blue, 0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+            ul {
+              li {
+                margin: 0;
+                border-bottom: 1px solid #fff;
+                a {
+                  padding: 10px 15px;
+                  color: #fff;
+                  text-decoration: none;
+                  display: block;
+                }
+                &:last-child {
+                  border: none;
+                }
+              }
+            }
+          }
+          ul {
+            li {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+      .respuestaC {
+        border: none;
+      }
+      .actions {
+        padding: 0 20px 20px 20px;
+      }
+    }
+  }
+  .add {
+    text-align: right;
+    margin-bottom: 20px;
+    a {
+      color: $text;
+      text-decoration: none;
+      span {
+        color: $blue;
+        position: relative;
+        top: 6px;
+      }
+    }
+  }
+  .final {
+    text-align: center;
+    margin-top: 30px;
+    a {
+      @include buttons;
+      background: $purple;
+      color: #fff;
+    }
+  }
+}
