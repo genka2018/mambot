@@ -66,8 +66,14 @@
     }
   }
 }
+.servs {
+  @include flex;
+}
+
 .servs-li {
   text-align: center;
+  margin-right: 30px;
+  width: 150px;
   a {
     color: $text;
     text-decoration: none;

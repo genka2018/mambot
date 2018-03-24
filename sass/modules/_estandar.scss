@@ -224,3 +224,17 @@ body, html {
     }
   }
 }
+.back {
+  text-align: center;
+  color: $text;
+  display: block;
+  float: left;
+  margin-right: 30px;
+  text-decoration: none;
+  &:hover {
+    color: $text;
+  }
+  span {
+    display: block;
+  }
+}

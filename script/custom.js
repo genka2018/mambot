@@ -30,17 +30,17 @@ UIkit.drop('.context', {
 });
 
 //MASONRY
-var $grid = $('.servs').masonry({
-	itemSelector: '.servs-li',
-	columnWidth: '.servs-li',
-	percentPosition: true,
-	sFitWidth: true,
-	gutter: 30
-});
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-$grid.masonry('layout');
-});
+// var $grid = $('.servs').masonry({
+// 	itemSelector: '.servs-li',
+// 	columnWidth: '.servs-li',
+// 	percentPosition: true,
+// 	sFitWidth: true,
+// 	gutter: 30
+// });
+// // layout Masonry after each image loads
+// $grid.imagesLoaded().progress( function() {
+// $grid.masonry('layout');
+// });
 
 
 
